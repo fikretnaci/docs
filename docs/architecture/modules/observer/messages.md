@@ -2,7 +2,7 @@
 
 ## MsgAddObserver
 
-Authorized: admin policy group 2.
+AddObserver adds an observer address to the observer set
 
 ```proto
 message MsgAddObserver {
@@ -16,7 +16,7 @@ message MsgAddObserver {
 ## MsgUpdateObserver
 
 UpdateObserver handles updating an observer address
-Authorized: admin policy group 2 (admin update), old observer address (if the
+Authorized: admin policy (admin update), old observer address (if the
 reason is that the observer was tombstoned).
 
 ```proto
@@ -104,7 +104,21 @@ message MsgAddBlockHeader {
 	int64 chain_id = 2;
 	bytes block_hash = 3;
 	int64 height = 4;
-	common.HeaderData header = 5;
+	proofs.HeaderData header = 5;
+}
+```
+
+## MsgResetChainNonces
+
+ResetChainNonces handles resetting chain nonces
+Authorized: admin policy group 2 (admin update)
+
+```proto
+message MsgResetChainNonces {
+	string creator = 1;
+	int64 chain_id = 2;
+	int64 chain_nonce_low = 3;
+	int64 chain_nonce_high = 4;
 }
 ```
 

@@ -41,7 +41,7 @@ message MsgDeployFungibleCoinZRC20 {
 	uint32 decimals = 4;
 	string name = 5;
 	string symbol = 6;
-	common.CoinType coin_type = 7;
+	coin.CoinType coin_type = 7;
 	int64 gas_limit = 8;
 }
 ```
@@ -62,7 +62,7 @@ message MsgRemoveForeignCoin {
 
 ## MsgUpdateSystemContract
 
-Authorized: admin policy group 2.
+UpdateSystemContract updates the system contract
 
 ```proto
 message MsgUpdateSystemContract {
@@ -91,7 +91,7 @@ message MsgUpdateContractBytecode {
 
 ## MsgUpdateZRC20WithdrawFee
 
-Authorized: admin policy group 2.
+UpdateZRC20WithdrawFee updates the withdraw fee and gas limit of a zrc20 token
 
 ```proto
 message MsgUpdateZRC20WithdrawFee {

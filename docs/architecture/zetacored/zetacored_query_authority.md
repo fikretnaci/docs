@@ -1,15 +1,15 @@
-# tx emissions
+# query authority
 
-emissions transactions subcommands
+Querying commands for the authority module
 
 ```
-zetacored tx emissions [flags]
+zetacored query authority [flags]
 ```
 
 ### Options
 
 ```
-  -h, --help   help for emissions
+  -h, --help   help for authority
 ```
 
 ### Options inherited from parent commands
@@ -24,6 +24,6 @@ zetacored tx emissions [flags]
 
 ### SEE ALSO
 
-* [zetacored tx](zetacored_tx.md)	 - Transactions subcommands
-* [zetacored tx emissions withdraw-emission](zetacored_tx_emissions_withdraw-emission.md)	 - create a new withdrawEmission
+* [zetacored query](zetacored_query.md)	 - Querying subcommands
+* [zetacored query authority show-policies](zetacored_query_authority_show-policies.md)	 - show the policies
 

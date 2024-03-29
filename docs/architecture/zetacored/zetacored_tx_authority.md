@@ -1,15 +1,15 @@
-# tx emissions
+# tx authority
 
-emissions transactions subcommands
+authority transactions subcommands
 
 ```
-zetacored tx emissions [flags]
+zetacored tx authority [flags]
 ```
 
 ### Options
 
 ```
-  -h, --help   help for emissions
+  -h, --help   help for authority
 ```
 
 ### Options inherited from parent commands
@@ -25,5 +25,5 @@ zetacored tx emissions [flags]
 ### SEE ALSO
 
 * [zetacored tx](zetacored_tx.md)	 - Transactions subcommands
-* [zetacored tx emissions withdraw-emission](zetacored_tx_emissions_withdraw-emission.md)	 - create a new withdrawEmission
+* [zetacored tx authority update-policies](zetacored_tx_authority_update-policies.md)	 - Update the policies
 
